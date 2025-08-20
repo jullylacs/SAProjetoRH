@@ -1,9 +1,9 @@
 # Projeto SA Portal RH
 
-**Última atualização:** 18/06/2025 às 14:00.
+**Última atualização:** 20.08.25
 
 ## Descrição
-Este projeto é um portal de RH desenvolvido em Angular, com funcionalidades para gerenciamento de currículos e vagas de emprego. O sistema utiliza um backend simulado via `json-server` e possui componentes dedicados para listagem, cadastro, edição e exclusão de dados relacionados a currículos e vagas.
+Este projeto é um Portal de Recursos Humanos desenvolvido com Angular, voltado para o gerenciamento eficiente de currículos e vagas de emprego. A aplicação permite a listagem, cadastro, edição e exclusão de registros de forma intuitiva, sendo ideal para processos seletivos e gestão de talentos.
 
 ## Funcionalidades principais
 - Listagem de currículos e vagas.

@@ -9,8 +9,12 @@ import { CurriculoListComponent } from './views/curriculo-list/curriculo-list.co
 
 import { PainelVagasComponent } from './views/painel-vagas/painel-vagas.component';
 
+import { UsuarioComponent } from './usuario/usuario.component';
+
+
 // crio as rotas de navegação
 const routes: Routes = [
+
   {path:"",component: HomeComponent},
   {path:"vagas", component: VagasComponent},
   {path:"curriculos", component: CurriculosComponent},
@@ -19,6 +23,9 @@ const routes: Routes = [
   {path:"curriculo-list", component: CurriculoListComponent},
 
   {path:"painel-vagas", component: PainelVagasComponent}
+
+   { path: 'registro', component: UsuarioComponent },
+
 ];
 
 @NgModule({

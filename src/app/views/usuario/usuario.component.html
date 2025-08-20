@@ -1,0 +1,105 @@
+<h2>Cadastrar Usuário</h2>
+
+<form #form="ngForm" (ngSubmit)="cadastrarUsuario()" novalidate>
+  <label for="id">ID</label>
+  <input
+    type="text"
+    name="id"
+    [(ngModel)]="usuario.id"
+    required
+    #id="ngModel"
+  />
+  <div *ngIf="id.invalid && id.touched" style="color: red;">
+    ID é obrigatório.
+  </div>
+  <br />
+
+  <label for="nome">Nome</label>
+  <input
+    type="text"
+    name="nome"
+    [(ngModel)]="usuario.nome"
+    required
+    #nome="ngModel"
+  />
+  <div *ngIf="nome.invalid && nome.touched" style="color: red;">
+    Nome é obrigatório.
+  </div>
+  <br />
+
+  <label for="email">Email</label>
+  <input
+    type="email"
+    name="email"
+    [(ngModel)]="usuario.email"
+    required
+    email
+    #email="ngModel"
+  />
+  <div *ngIf="email.invalid && email.touched" style="color: red;">
+    Email válido é obrigatório.
+  </div>
+  <br />
+
+  <label for="senha">Senha</label>
+  <input
+    type="password"
+    name="senha"
+    [(ngModel)]="usuario.senha"
+    required
+    minlength="6"
+    #senha="ngModel"
+  />
+  <div *ngIf="senha.invalid && senha.touched" style="color: red;">
+    Senha é obrigatória (mínimo 6 caracteres).
+  </div>
+  <br />
+
+  <label for="tipo">Tipo</label>
+  <select
+    name="tipo"
+    [(ngModel)]="usuario.tipo"
+    required
+    #tipo="ngModel"
+  >
+    <option value="" disabled selected>Selecione o tipo</option>
+    <option value="usuario">Usuário</option>
+    <option value="administrador">Administrador</option>
+  </select>
+  <div *ngIf="tipo.invalid && tipo.touched" style="color: red;">
+    Tipo é obrigatório.
+  </div>
+  <br />
+
+  <button type="button" (click)="cadastrarUsuario()">Cadastrar Usuário</button>
+  <button type="button" (click)="atualizarUsuario(usuario.id)">Atualizar Usuário</button>
+  <button type="button" (click)="excluirUsuario(usuario.id)">Excluir Usuário</button>
+</form>
+
+<!-- Tabela com os usuários já cadastrados -->
+<section class="listar-usuarios">
+  <table class="table">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Nome</th>
+        <th>Email</th>
+        <th>Tipo</th>
+        <th>Ação</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let usuario of usuarios">
+        <td>{{ usuario.id }}</td>
+        <td>{{ usuario.nome }}</td>
+        <td>{{ usuario.email }}</td>
+        <td>{{ usuario.tipo }}</td>
+        <td>
+          <button type="button" (click)="listarUsuarioPorId(usuario)">Listar</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+
+<div class="rodape"></div>

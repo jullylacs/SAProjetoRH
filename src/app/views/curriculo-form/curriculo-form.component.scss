@@ -1,0 +1,148 @@
+// Paleta de cores principais
+$primaria: #0077ff;
+$branco: #ffffff;
+$cinza-claro: #f8f9fa;
+$cinza-medio: #dee2e6;
+$cinza-escuro: #343a40;
+$texto: #2c2c2c;
+$sombra: rgba(0, 0, 0, 0.06);
+
+h2 {
+  text-align: center;
+  padding: 2rem 1rem 1rem;
+  color: $primaria;
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+form {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: $branco;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px $sombra;
+
+  label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: $texto;
+    font-weight: 500;
+    font-size: 1rem;
+  }
+
+  input {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    margin-bottom: 1.5rem;
+    border: 1px solid $cinza-medio;
+    border-radius: 8px;
+    font-size: 1rem;
+    background-color: #fff;
+    transition: all 0.3s;
+
+    &:focus {
+      outline: none;
+      border-color: $primaria;
+      box-shadow: 0 0 0 3px rgba(0, 119, 255, 0.25);
+    }
+  }
+
+  button {
+    padding: 0.7rem 1.4rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+    color: $branco;
+    background-color: $primaria;
+    margin-right: 0.5rem;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: darken($primaria, 10%);
+    }
+
+    &:nth-of-type(2) {
+      background-color: #ffc107;
+      color: #212529;
+
+      &:hover {
+        background-color: darken(#ffc107, 10%);
+      }
+    }
+
+    &:nth-of-type(3) {
+      background-color: #dc3545;
+
+      &:hover {
+        background-color: darken(#dc3545, 10%);
+      }
+    }
+  }
+}
+
+// TABELA
+
+section {
+  max-width: 1300px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: $branco;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px $sombra;
+  overflow-x: auto;
+
+  .table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.9rem;
+
+    thead {
+      background-color: $primaria;
+
+      th {
+        color: $branco;
+        font-weight: 600;
+        padding: 1rem;
+        border-bottom: 2px solid $cinza-medio;
+        text-align: left;
+      }
+    }
+
+    tbody {
+      tr {
+        transition: background-color 0.2s;
+
+        &:hover {
+          background-color: $cinza-claro;
+        }
+      }
+
+      td {
+        padding: 0.9rem 1rem;
+        border-bottom: 1px solid $cinza-medio;
+        color: $texto;
+      }
+
+      .btn-listar {
+        background-color: $primaria;
+        color: $branco;
+        padding: 6px 12px;
+        border: none;
+        border-radius: 5px;
+        font-size: 0.85rem;
+        cursor: pointer;
+        transition: background-color 0.3s;
+
+        &:hover {
+          background-color: darken($primaria, 10%);
+        }
+      }
+    }
+  }
+}
+.rodape {
+  height: 10vh;
+}

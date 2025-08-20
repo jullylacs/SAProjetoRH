@@ -1,0 +1,66 @@
+{
+  "vagas": [
+    {
+      "id": "1",
+      "nome": "Desenvolver FrontEnd Jr",
+      "foto": "foto1.jpg",
+      "descricao": "Trabalhar com HTML, CSS e JS",
+      "salario": 4000
+    },
+    {
+      "id": "2",
+      "nome": "Desenvolver BackEnd Pleno",
+      "foto": "foto2.jpg",
+      "descricao": "Trabalhar com Desenvolvimento Web",
+      "salario": 7000
+    },
+    {
+      "id": "3",
+      "nome": "Desenvolver Fullstack Senior",
+      "foto": "foto3.jpg",
+      "descricao": "Trabalhar com Desenvolvimento Web",
+      "salario": 10000
+    },
+    {
+      "id": "4",
+      "nome": "Engenherio nuvem",
+      "foto": "foto4.jpg",
+      "descricao": "Trabalhar com Cloud",
+      "salario": 8000
+    }
+  ],
+  "curriculos": [
+{
+      "id": "1",
+      "nome": "Marina Oliveira",
+      "formacao": "Bacharelado em Relações Internacionais",
+      "experiencia": "2 anos como Coordenadora de Projetos",
+      "habilidades": "Gestão de equipes, planejamento estratégico, negociação",
+      "linkedin": "marinaoliveira"
+    },
+    {
+      "id": "2",
+      "nome": "Carlos Mendes",
+      "formacao": "Tecnologia da Informação",
+      "experiencia": "6 anos como Arquiteto de Software",
+      "habilidades": "Java, Spring Boot, AWS, Microservices",
+      "linkedin": "carlosmendes"
+    },
+    {
+      "id": "3",
+      "nome": "Fernanda Rocha",
+      "formacao": "Design de Interação",
+      "experiencia": "5 anos como UX Designer",
+      "habilidades": "Figma, Design Thinking, Prototipagem",
+      "linkedin": "fernandarocha"
+    },
+    {
+      "id": "4",
+      "nome": "Tiago Martins",
+      "formacao": "Engenharia de Computação",
+      "experiencia": "4 anos como Engenheiro de Dados",
+      "habilidades": "Python, SQL, BigQuery, ETL",
+      "linkedin": "tiagomartins"
+    } 
+  ]
+}

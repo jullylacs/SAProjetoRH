@@ -1,4 +1,19 @@
 {
+    "usuarios": [
+    {
+      "id": 1,
+      "email": "admin@rh.com",
+      "senha": "admin123",
+      "tipo": "admin"
+    },
+    {
+      "id": "c7ca",
+      "nome": "Júlia",
+      "email": "Júlia@gmail.com",
+      "senha": "123456",
+      "tipo": "usuario"
+    }
+  ],
   "vagas": [
     {
       "id": "1",
@@ -30,14 +45,6 @@
     }
   ],
   "curriculos": [
-{
-      "id": "1",
-      "nome": "Marina Oliveira",
-      "formacao": "Bacharelado em Relações Internacionais",
-      "experiencia": "2 anos como Coordenadora de Projetos",
-      "habilidades": "Gestão de equipes, planejamento estratégico, negociação",
-      "linkedin": "marinaoliveira"
-    },
     {
       "id": "2",
       "nome": "Carlos Mendes",
@@ -61,6 +68,6 @@
       "experiencia": "4 anos como Engenheiro de Dados",
       "habilidades": "Python, SQL, BigQuery, ETL",
       "linkedin": "tiagomartins"
-    } 
+    }
   ]
 }

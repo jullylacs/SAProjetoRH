@@ -19,12 +19,12 @@
     gap: 2rem;
 
     .navLink {
-      color: #0077ff;
+      color: #002D62;
       padding: 0.5rem 0;
       position: relative;
 
       &:hover {
-        color: #0056b3;
+        color: #002D62;
       }
 
       &::after {
@@ -32,7 +32,7 @@
         display: block;
         width: 0%;
         height: 2px;
-        background: #0056b3;
+        background: #002D62;
         transition: width 0.3s ease;
         position: absolute;
         bottom: -4px;

@@ -16,7 +16,7 @@
   text-align: center;
   font-size: 1.6rem;
   margin-bottom: 1rem;
-  color: #0077ff;
+  color: #002D62;
 }
 
 .register-container form {
@@ -40,14 +40,14 @@
 }
 
 .register-container input:focus {
-  border-color: #0077ff;
+  border-color: #002D62;
   box-shadow: 0 0 6px rgba(106, 79, 193, 0.4);
   outline: none;
 }
 
 .register-container button {
   padding: 0.7rem;
-  background: linear-gradient(135deg, #fff, #0077ff);
+  background: linear-gradient(135deg, #fff, #002D62);
   border: none;
   border-radius: 8px;
   font-size: 1rem;
@@ -58,7 +58,7 @@
 }
 
 .register-container button:hover {
-  background: linear-gradient(135deg, #fff, #0077ff);
+  background: linear-gradient(135deg, #fff, #002D62);
   transform: translateY(-2px);
 }
 

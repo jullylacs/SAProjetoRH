@@ -27,7 +27,7 @@
 
     .card-body {
       h5.card-title {
-        color: #0077ff;
+        color: #002D62;
         font-size: 1.3rem;
         font-weight: 600;
         margin-bottom: 1rem;
@@ -40,12 +40,12 @@
         margin-bottom: 0.75rem;
 
         strong {
-          color: #0077ff;
+          color: #002D62;
         }
       }
 
       a {
-        color: #0077ff;
+        color: #002D62;
         text-decoration: none;
         font-size: 0.9rem;
         font-weight: 500;
@@ -53,7 +53,7 @@
 
         &:hover {
           text-decoration: underline;
-          color: darken(#0077ff, 10%);
+          color: darken(#002D62, 10%);
         }
       }
     }
